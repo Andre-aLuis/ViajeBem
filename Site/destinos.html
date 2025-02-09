@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos - ViageBem</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagens/ViajeBem_logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- Menu de navegação -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark custom-bg">
+            <div class="container">
+                <a class="navbar-brand mb-2" href="index.html">
+                    <img src="imagens/ViajeBem_logo.png" alt="logo" width="250" height="80">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <div class="navbar-nav ms-auto mx-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="destinos.html">Destinos</a>
+                        <a class="nav-link" href="promocoes.html">Promoções</a>
+                        <a class="nav-link" href="contato.html">Contato</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle CustomDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-fill-gear fs-4"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="login-cadastro.html" target="_blank">Iniciar sessão</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim menu -->
+    <!-- Início  -->
+    <main class="bg-destino-contato">
+        <section>
+            <div class="container mt-5 mb-4 text-white">
+                <h2>Embarque na sua próxima aventura.</h2> 
+                <h6>Encontre agora seu destino dos sonhos!</h6>
+            </div>
+          
+            <div class="container py-4 mb-5 shadow bg-white">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form method="get">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="ida"
+                                    value="ida">
+                                <label class="form-check-label" for="ida">Ida</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="idavolta"
+                                    value="idavolta">
+                                <label class="form-check-label" for="idavolta">Ida e Volta</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="vdestinos"
+                                    value="vdestinos">
+                                <label class="form-check-label" for="vdestinos">Vários destinos</label>
+                            </div>
+
+                            <div class="row py-2">
+                                <div class="col-sm-4">
+                                    <label for="origem" class="form-label">Origem</label>
+                                    <input type="text" class="form-control" id="origem" aria-label="origem">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="destino" class="form-label">Destino</label>
+                                    <input type="text" class="form-control" id="destino" aria-label="destino">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="qtpessoas" class="form-label">Quantidade de pessoas</label>
+                                    <input type="text" class="form-control" id="qtpessoas" aria-label="qtpessoas">
+                                </div>   
+                            </div>
+
+                            <div class="row py-2 align-items-sm-end ">
+                                <div class="col-sm-4 mb-2 mb-sm-0">
+                                    <label for="dtida" class="form-label">Data de ida</label>
+                                    <input type="date" class="form-control" id="dtida" aria-label="dtida">
+                                </div>
+                                <div class="col-sm-4 mb-3 mb-sm-0">
+                                    <label for="dtvolta" class="form-label">Data de volta</label>
+                                    <input type="date" class="form-control" id="dtvolta" aria-label="dtvolta">
+                                </div>
+                                <div class="col-sm-4 d-grid gap-2 d-md-block">
+                                    <button class="btn btn-primary btn-sm" type="submit">Pesquisar</button>
+                                </div>
+                            </div>
+                        </form>      
+                    </div>  
+                </div>            
+            </div>      
+        </section>
+    </main>
+    <!-- Fim -->
+    <!-- Início do Rodapé -->
+    <footer class="custom-footer">
+        <div class="container pt-2 d-flex justify-content-between align-items-center">
+            <p>&copy; 2025 ViageBem. Todos os direitos reservados.</p>
+            <div class="d-flex align-items-center pb-3">
+                <i class="bi bi-facebook fs-6 pe-2"></i>
+                <i class="bi bi-instagram fs-6 pe-2"></i>
+                <i class="bi bi-twitter fs-6"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- Fim do Rodapé -->
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
